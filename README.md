@@ -716,6 +716,483 @@ STEP 5: Deploy
 
 ---
 
+
+# 10. AI MODELS: TYPES, PRICING & COMPARISON
+
+## 10.1 Apa Itu AI Model?
+
+```
+AI MODEL = "Otak" dari AI Assistant
+
+Model menentukan:
+- Kualitas response
+- Kecepatan
+- Bahasa yang didukung
+- Harga
+- Limitasi
+```
+
+## 10.2 Jenis-Jenis AI Model
+
+### Kategori Berdasarkan Fungsi:
+
+```
+LLM (Large Language Model):
+├── Text generation
+├── Conversation
+├── Writing
+└── Analysis
+Contoh: GPT-4, Claude, Gemini
+
+VISION MODELS:
+├── Image analysis
+├── OCR
+├── Face recognition
+└── Contoh: GPT-4V, Claude Vision
+
+AUDIO MODELS:
+├── Speech to text
+├── Text to speech
+└── Contoh: Whisper, ElevenLabs
+
+MULTIMODAL:
+├── Text + Image + Audio
+├── Semua dalam satu
+└── Contoh: GPT-4o, Gemini Pro Vision
+```
+
+### Kategori Berdasarkan Provider:
+
+```
+OPENAI:
+├── GPT-4o (latest, fastest)
+├── GPT-4 Turbo
+├── GPT-3.5 Turbo
+└── Whisper (audio)
+
+ANTHROPIC:
+├── Claude 3.5 Sonnet (best for coding)
+├── Claude 3 Opus
+├── Claude 3 Haiku (fastest)
+└── Claude AI
+
+GOOGLE:
+├── Gemini 2.0 Flash (fastest)
+├── Gemini 1.5 Pro
+├── Gemini 1.5 Flash
+└── Gemini 2.0 Flash Thinking
+
+MISTRAL:
+├── Mistral Large
+├── Mistral Medium
+├── Mistral Small
+└── Open source options
+
+MINIMAX:
+├── MiniMax M2.7
+├── MiniMax M2
+└── Fast & affordable
+
+OPEN SOURCE (FREE):
+├── Llama 3.1 (Meta)
+├── Qwen 2.5 (Alibaba)
+├── DeepSeek V3
+└── Bisa self-host
+```
+
+## 10.3 Perbandingan AI Models
+
+### Tabel Perbandingan:
+
+| Model | Provider | Speed | Quality | Price | Best For |
+|-------|----------|-------|----------|-------|----------|
+| GPT-4o | OpenAI | ⚡⚡⚡ | ⭐⭐⭐⭐⭐ | 💰💰💰 | Everything |
+| GPT-4 Turbo | OpenAI | ⚡⚡ | ⭐⭐⭐⭐⭐ | 💰💰💰 | Coding, analysis |
+| GPT-3.5 | OpenAI | ⚡⚡⚡⚡ | ⭐⭐⭐ | 💰 | Simple tasks |
+| Claude 3.5 | Anthropic | ⚡⚡ | ⭐⭐⭐⭐⭐ | 💰💰💰 | Coding, writing |
+| Claude 3 | Anthropic | ⚡⚡ | ⭐⭐⭐⭐ | 💰💰 | Balanced |
+| Gemini 2.0 | Google | ⚡⚡⚡⚡ | ⭐⭐⭐⭐ | 💰💰 | Fast tasks |
+| MiniMax M2 | MiniMax | ⚡⚡⚡⚡ | ⭐⭐⭐ | 💰 | Budget-friendly |
+| Llama 3.1 | Meta | ⚡⚡ | ⭐⭐⭐ | FREE | Self-host |
+
+### Legenda:
+
+```
+Speed: ⚡⚡⚡⚡ = fastest, ⚡ = slow
+Quality: ⭐⭐⭐⭐⭐ = best
+Price: 💰💰💰 = expensive, 💰 = cheap
+```
+
+## 10.4 Pricing Comparison (per 1M tokens)
+
+### OpenAI:
+
+| Model | Input | Output | Context |
+|-------|-------|--------|---------|
+| GPT-4o | $2.50 | $10.00 | 128K |
+| GPT-4o Mini | $0.15 | $0.60 | 128K |
+| GPT-4 Turbo | $10.00 | $30.00 | 128K |
+| GPT-3.5 Turbo | $0.50 | $2.00 | 16K |
+
+### Anthropic:
+
+| Model | Input | Output | Context |
+|-------|-------|--------|---------|
+| Claude 3.5 Sonnet | $3.00 | $15.00 | 200K |
+| Claude 3 Opus | $15.00 | $75.00 | 200K |
+| Claude 3 Haiku | $0.25 | $1.25 | 200K |
+
+### Google:
+
+| Model | Input | Output | Context |
+|-------|-------|--------|---------|
+| Gemini 2.0 Flash | $0.10 | $0.40 | 1M |
+| Gemini 1.5 Pro | $1.25 | $5.00 | 128K |
+| Gemini 1.5 Flash | $0.075 | $0.30 | 128K |
+
+### MiniMax:
+
+| Model | Input | Output | Context |
+|-------|-------|--------|---------|
+| MiniMax M2.7 | $0.20 | $0.70 | 32K |
+| MiniMax M2 | $0.35 | $1.20 | 32K |
+
+### Open Source (FREE):
+
+| Model | Input | Output | Context |
+|-------|-------|--------|---------|
+| Llama 3.1 70B | FREE* | FREE* | 128K |
+| Llama 3.1 8B | FREE* | FREE* | 128K |
+| Qwen 2.5 72B | FREE* | FREE* | 128K |
+| DeepSeek V3 | FREE* | FREE* | 128K |
+
+* FREE jika self-host (butuh VPS dengan RAM besar)
+
+## 10.5 Calculator Contoh Biaya
+
+### Contoh 1: ChatGPT-like (1000 chats/bulan)
+
+```
+Per chat: ~500 tokens input + 300 tokens output
+Per hari: 1000 chats × 800 tokens = 800,000 tokens
+Per bulan: 800,000 × 30 = 24,000,000 tokens (24M)
+
+Dengan GPT-4o Mini:
+- Input: 24M × $0.15/1M = $3.60
+- Output: 24M × $0.60/1M = $14.40
+- Total: ~$18/bulan
+
+Dengan Claude Haiku:
+- Input: 24M × $0.25/1M = $6.00
+- Output: 24M × $1.25/1M = $30.00
+- Total: ~$36/bulan
+```
+
+### Contoh 2: Business Bot (500 chats/hari)
+
+```
+Per chat: ~200 tokens input + 150 tokens output
+Per hari: 500 × 350 = 175,000 tokens
+Per bulan: 175,000 × 30 = 5,250,000 tokens (5.25M)
+
+Dengan Gemini Flash:
+- Input: 5.25M × $0.075/1M = $0.39
+- Output: 5.25M × $0.30/1M = $1.58
+- Total: ~$2/bulan
+
+Dengan GPT-4o Mini:
+- Input: 5.25M × $0.15/1M = $0.79
+- Output: 5.25M × $0.60/1M = $3.15
+- Total: ~$4/bulan
+```
+
+## 10.6 Rekomendasi Berdasarkan Use Case
+
+### Personal AI Assistant:
+
+```
+REKOMENDASI: MiniMax M2 atau GPT-4o Mini
+
+Alasan:
+- Affordable
+- Fast response
+- Good quality
+- Cukup untuk daily tasks
+
+Budget: ~$5-10/bulan
+```
+
+### Business Bot (Customer Service):
+
+```
+REKOMENDASI: Gemini 1.5 Flash atau GPT-4o Mini
+
+Alasan:
+- Fast (customer gak mau nunggu lama)
+- Affordable
+- Good enough untuk FAQ & simple queries
+
+Budget: ~$2-5/bulan
+```
+
+### Coding Assistant:
+
+```
+REKOMENDASI: Claude 3.5 Sonnet
+
+Alasan:
+- Best for code generation
+- Good debugging
+- Long context (200K)
+
+Budget: ~$20-50/bulan
+```
+
+### Complex Analysis / Research:
+
+```
+REKOMENDASI: GPT-4o atau Claude 3.5 Sonnet
+
+Alasan:
+- Highest quality
+- Long context
+- Complex reasoning
+
+Budget: ~$30-100/bulan
+```
+
+## 10.7 Open Source vs Paid API
+
+### Self-Host (Open Source):
+
+```
+MODELS:
+├── Llama 3.1 70B (Meta)
+├── Qwen 2.5 72B (Alibaba)
+├── DeepSeek V3
+└── Mistral Large
+
+KEUNTUNGAN:
+✅ FREE (tiap generate)
+✅ No rate limits
+✅ Full control
+✅ Data privacy (all locally)
+
+KEKURANGAN:
+❌ Butuh VPS powerful (RAM 64GB+)
+❌ Setup complex
+❌ Maintenance sendiri
+❌ Speed tergantung hardware
+
+VPS untuk Self-Host:
+- RAM: 64GB minimum
+- CPU: 8+ cores
+- Storage: 100GB+ SSD
+- Cost: $50-100/bulan
+```
+
+### Paid API:
+
+```
+PROVIDERS:
+├── OpenAI (GPT-4, GPT-3.5)
+├── Anthropic (Claude)
+├── Google (Gemini)
+├── MiniMax
+└── Lainnya
+
+KEUNTUNGAN:
+✅ Gak butuh VPS powerful
+✅ Setup simpel
+✅ Ready pakai
+✅ Support dari provider
+
+KEKURANGAN:
+❌有料 (tiap token berbayar)
+❌ Rate limits
+❌ Data pergi ke server lain
+
+BIASA UNTUK:
+- Individual / small business
+- Production apps
+- Quick deployment
+```
+
+## 10.8 Cara Memilih AI Model
+
+### Decision Tree:
+
+```
+START
+  ↓
+Budget under $10/month?
+  ↓ YES → MiniMax atau Gemini Flash
+  ↓ NO ↓
+Need coding support?
+  ↓ YES → Claude 3.5 Sonnet
+  ↓ NO ↓
+Need fastest response?
+  ↓ YES → GPT-4o Mini atau Gemini Flash
+  ↓ NO ↓
+Need highest quality?
+  ↓ YES → GPT-4o atau Claude 3.5 Sonnet
+  ↓ NO ↓
+Use case apa?
+  ↓
+Simple chatbot → GPT-4o Mini
+Customer service → Gemini Flash
+Research/Analysis → GPT-4o
+Coding → Claude 3.5 Sonnet
+```
+
+### Checklist Pemilihan:
+
+```
+PILIH MODEL BERDASARKAN:
+
+□ Budget
+  └── Berapa budget per bulan?
+
+□ Use Case
+  └── Chatbot? Coding? Writing? Analysis?
+
+□ Volume
+  └── Berapa banyak chat per bulan?
+
+□ Quality vs Speed
+  └── Prioritas quality atau speed?
+
+□ Privacy
+  └── Data harus lokal atau boleh di-cloud?
+
+□ Technical Skill
+  └── Bisa self-host atau perlu managed?
+```
+
+## 10.9 OpenClaw Default Models
+
+### OpenClaw Supports:
+
+```
+MiniMax:
+├── minimax/MiniMax-M2.7 (current)
+├── minimax/MiniMax-M2
+└── Fast, affordable
+
+OpenAI:
+├── openai/gpt-4o
+├── openai/gpt-4o-mini
+├── openai/gpt-4-turbo
+└── openai/gpt-3.5-turbo
+
+Anthropic:
+├── anthropic/claude-3.5-sonnet
+├── anthropic/claude-3-opus
+└── anthropic/claude-3-haiku
+
+Google:
+├── google/gemini-2.0-flash
+├── google/gemini-1.5-pro
+└── google/gemini-1.5-flash
+```
+
+### Setup di OpenClaw:
+
+```javascript
+// Dalam config:
+{
+  "ai": {
+    "model": "minimax/MiniMax-M2.7",  // Default
+    // Atau pilih model lain:
+    // "openai/gpt-4o-mini"
+    // "google/gemini-1.5-flash"
+    // "anthropic/claude-3-haiku"
+  }
+}
+```
+
+## 10.10 Tips Optimasi Biaya
+
+### 1. Use Smaller Models for Simple Tasks:
+
+```
+Simple FAQ → Use Haiku/GPT-3.5/Gemini Flash
+Complex analysis → Use GPT-4/Claude 3.5
+```
+
+### 2. Implement Caching:
+
+```
+Same question within 5 min
+  → Return cached response
+  → No API call needed
+  → SAVE COST
+```
+
+### 3. Optimize Prompt Length:
+
+```
+BAD: "You are a helpful assistant. You are designed to be helpful."
+GOOD: "You are a helpful assistant."
+
+Shorter prompt = fewer tokens = lower cost
+```
+
+### 4. Use System Prompts Efficiently:
+
+```
+System prompt → loaded once per conversation
+User messages → cost setiap kali
+
+Minimize user message length when possible
+```
+
+### 5. Batch Similar Requests:
+
+```
+Instead of 100 separate API calls
+  → Batch into fewer calls
+  → Save on connection overhead
+```
+
+## 10.11 Ringkasan Pricing Guide
+
+### Budget Options:
+
+```
+$0-5/bulan:
+├── Self-host Llama/Qwen (VPS $50+/bulan)
+├── Gemini 1.5 Flash (very cheap)
+└── MiniMax M2 (affordable)
+
+$5-20/bulan:
+├── GPT-4o Mini
+├── Claude 3 Haiku
+└── Gemini 1.5 Pro
+
+$20-50/bulan:
+├── Claude 3.5 Sonnet
+├── GPT-4 Turbo
+└── Gemini 1.5 Pro (high volume)
+
+$50+/bulan:
+├── GPT-4o
+├── Claude 3 Opus
+└── High volume production
+```
+
+### Quick Reference:
+
+| Budget | Model Pilihan | Cocok Untuk |
+|--------|---------------|-------------|
+| FREE | Llama 3.1 (self-host) | Tech-savvy, privacy |
+| $2/bulan | Gemini Flash | Simple bots |
+| $5/bulan | GPT-4o Mini | General purpose |
+| $20/bulan | Claude 3.5 Sonnet | Coding, writing |
+| $50+/bulan | GPT-4o | Premium quality |
+
+---
+
 # 10. SKILL INSTALLATION
 
 ## 10.1 Apa Itu Skills?
@@ -1129,3 +1606,466 @@ Use at your own risk.
 
 **© 2025 Panduan AI Assistant Service**
 **All Rights Reserved**
+# 10. AI MODELS: TYPES, PRICING & COMPARISON
+
+## 10.1 Apa Itu AI Model?
+
+```
+AI MODEL = "Otak" dari AI Assistant
+
+Model menentukan:
+- Kualitas response
+- Kecepatan
+- Bahasa yang didukung
+- Harga
+- Limitasi
+```
+
+## 10.2 Jenis-Jenis AI Model
+
+### Kategori Berdasarkan Fungsi:
+
+```
+LLM (Large Language Model):
+├── Text generation
+├── Conversation
+├── Writing
+└── Analysis
+Contoh: GPT-4, Claude, Gemini
+
+VISION MODELS:
+├── Image analysis
+├── OCR
+├── Face recognition
+└── Contoh: GPT-4V, Claude Vision
+
+AUDIO MODELS:
+├── Speech to text
+├── Text to speech
+└── Contoh: Whisper, ElevenLabs
+
+MULTIMODAL:
+├── Text + Image + Audio
+├── Semua dalam satu
+└── Contoh: GPT-4o, Gemini Pro Vision
+```
+
+### Kategori Berdasarkan Provider:
+
+```
+OPENAI:
+├── GPT-4o (latest, fastest)
+├── GPT-4 Turbo
+├── GPT-3.5 Turbo
+└── Whisper (audio)
+
+ANTHROPIC:
+├── Claude 3.5 Sonnet (best for coding)
+├── Claude 3 Opus
+├── Claude 3 Haiku (fastest)
+└── Claude AI
+
+GOOGLE:
+├── Gemini 2.0 Flash (fastest)
+├── Gemini 1.5 Pro
+├── Gemini 1.5 Flash
+└── Gemini 2.0 Flash Thinking
+
+MISTRAL:
+├── Mistral Large
+├── Mistral Medium
+├── Mistral Small
+└── Open source options
+
+MINIMAX:
+├── MiniMax M2.7
+├── MiniMax M2
+└── Fast & affordable
+
+OPEN SOURCE (FREE):
+├── Llama 3.1 (Meta)
+├── Qwen 2.5 (Alibaba)
+├── DeepSeek V3
+└── Bisa self-host
+```
+
+## 10.3 Perbandingan AI Models
+
+| Model | Provider | Speed | Quality | Price | Best For |
+|-------|----------|-------|----------|-------|----------|
+| GPT-4o | OpenAI | ⚡⚡⚡ | ⭐⭐⭐⭐⭐ | 💰💰💰 | Everything |
+| GPT-4 Turbo | OpenAI | ⚡⚡ | ⭐⭐⭐⭐⭐ | 💰💰💰 | Coding, analysis |
+| GPT-3.5 | OpenAI | ⚡⚡⚡⚡ | ⭐⭐⭐ | 💰 | Simple tasks |
+| Claude 3.5 | Anthropic | ⚡⚡ | ⭐⭐⭐⭐⭐ | 💰💰💰 | Coding, writing |
+| Claude 3 | Anthropic | ⚡⚡ | ⭐⭐⭐⭐ | 💰💰 | Balanced |
+| Gemini 2.0 | Google | ⚡⚡⚡⚡ | ⭐⭐⭐⭐ | 💰💰 | Fast tasks |
+| MiniMax M2 | MiniMax | ⚡⚡⚡⚡ | ⭐⭐⭐ | 💰 | Budget-friendly |
+| Llama 3.1 | Meta | ⚡⚡ | ⭐⭐⭐ | FREE | Self-host |
+
+## 10.4 Pricing Comparison (per 1M tokens)
+
+### OpenAI:
+
+| Model | Input | Output | Context |
+|-------|-------|--------|---------|
+| GPT-4o | $2.50 | $10.00 | 128K |
+| GPT-4o Mini | $0.15 | $0.60 | 128K |
+| GPT-4 Turbo | $10.00 | $30.00 | 128K |
+| GPT-3.5 Turbo | $0.50 | $2.00 | 16K |
+
+### Anthropic:
+
+| Model | Input | Output | Context |
+|-------|-------|--------|---------|
+| Claude 3.5 Sonnet | $3.00 | $15.00 | 200K |
+| Claude 3 Opus | $15.00 | $75.00 | 200K |
+| Claude 3 Haiku | $0.25 | $1.25 | 200K |
+
+### Google:
+
+| Model | Input | Output | Context |
+|-------|-------|--------|---------|
+| Gemini 2.0 Flash | $0.10 | $0.40 | 1M |
+| Gemini 1.5 Pro | $1.25 | $5.00 | 128K |
+| Gemini 1.5 Flash | $0.075 | $0.30 | 128K |
+
+### MiniMax:
+
+| Model | Input | Output | Context |
+|-------|-------|--------|---------|
+| MiniMax M2.7 | $0.20 | $0.70 | 32K |
+| MiniMax M2 | $0.35 | $1.20 | 32K |
+
+### Open Source (FREE):
+
+| Model | Input | Output | Context |
+|-------|-------|--------|---------|
+| Llama 3.1 70B | FREE* | FREE* | 128K |
+| Llama 3.1 8B | FREE* | FREE* | 128K |
+| Qwen 2.5 72B | FREE* | FREE* | 128K |
+| DeepSeek V3 | FREE* | FREE* | 128K |
+
+* FREE jika self-host (butuh VPS dengan RAM besar)
+
+## 10.5 Calculator Contoh Biaya
+
+### Contoh 1: ChatGPT-like (1000 chats/bulan)
+
+```
+Per chat: ~500 tokens input + 300 tokens output
+Per hari: 1000 chats x 800 tokens = 800,000 tokens
+Per bulan: 800,000 x 30 = 24,000,000 tokens (24M)
+
+Dengan GPT-4o Mini:
+- Input: 24M x $0.15/1M = $3.60
+- Output: 24M x $0.60/1M = $14.40
+- Total: ~$18/bulan
+
+Dengan Claude Haiku:
+- Input: 24M x $0.25/1M = $6.00
+- Output: 24M x $1.25/1M = $30.00
+- Total: ~$36/bulan
+```
+
+### Contoh 2: Business Bot (500 chats/hari)
+
+```
+Per chat: ~200 tokens input + 150 tokens output
+Per hari: 500 x 350 = 175,000 tokens
+Per bulan: 175,000 x 30 = 5,250,000 tokens (5.25M)
+
+Dengan Gemini Flash:
+- Input: 5.25M x $0.075/1M = $0.39
+- Output: 5.25M x $0.30/1M = $1.58
+- Total: ~$2/bulan
+
+Dengan GPT-4o Mini:
+- Input: 5.25M x $0.15/1M = $0.79
+- Output: 5.25M x $0.60/1M = $3.15
+- Total: ~$4/bulan
+```
+
+## 10.6 Rekomendasi Berdasarkan Use Case
+
+### Personal AI Assistant:
+
+```
+REKOMENDASI: MiniMax M2 atau GPT-4o Mini
+
+Alasan:
+- Affordable
+- Fast response
+- Good quality
+- Cukup untuk daily tasks
+
+Budget: ~$5-10/bulan
+```
+
+### Business Bot (Customer Service):
+
+```
+REKOMENDASI: Gemini 1.5 Flash atau GPT-4o Mini
+
+Alasan:
+- Fast (customer gak mau nunggu lama)
+- Affordable
+- Good enough untuk FAQ & simple queries
+
+Budget: ~$2-5/bulan
+```
+
+### Coding Assistant:
+
+```
+REKOMENDASI: Claude 3.5 Sonnet
+
+Alasan:
+- Best for code generation
+- Good debugging
+- Long context (200K)
+
+Budget: ~$20-50/bulan
+```
+
+### Complex Analysis / Research:
+
+```
+REKOMENDASI: GPT-4o atau Claude 3.5 Sonnet
+
+Alasan:
+- Highest quality
+- Long context
+- Complex reasoning
+
+Budget: ~$30-100/bulan
+```
+
+## 10.7 Open Source vs Paid API
+
+### Self-Host (Open Source):
+
+```
+MODELS:
+├── Llama 3.1 70B (Meta)
+├── Qwen 2.5 72B (Alibaba)
+├── DeepSeek V3
+└── Mistral Large
+
+KEUNTUNGAN:
++ FREE (tiap generate)
++ No rate limits
++ Full control
++ Data privacy (all locally)
+
+KEKURANGAN:
+- Butuh VPS powerful (RAM 64GB+)
+- Setup complex
+- Maintenance sendiri
+- Speed tergantung hardware
+
+VPS untuk Self-Host:
+- RAM: 64GB minimum
+- CPU: 8+ cores
+- Storage: 100GB+ SSD
+- Cost: $50-100/bulan
+```
+
+### Paid API:
+
+```
+PROVIDERS:
++ OpenAI (GPT-4, GPT-3.5)
++ Anthropic (Claude)
++ Google (Gemini)
++ MiniMax
++ Lainnya
+
+KEUNTUNGAN:
++ Gak butuh VPS powerful
++ Setup simpel
++ Ready pakai
++ Support dari provider
+
+KEKURANGAN:
+-有料 (tiap token berbayar)
+- Rate limits
+- Data pergi ke server lain
+
+BIASA UNTUK:
+- Individual / small business
+- Production apps
+- Quick deployment
+```
+
+## 10.8 Cara Memilih AI Model
+
+### Decision Tree:
+
+```
+START
+  |
+Budget under $10/month?
+  |--YES--> MiniMax atau Gemini Flash
+  |--NO-->|
+Need coding support?
+  |--YES--> Claude 3.5 Sonnet
+  |--NO-->|
+Need fastest response?
+  |--YES--> GPT-4o Mini atau Gemini Flash
+  |--NO-->|
+Need highest quality?
+  |--YES--> GPT-4o atau Claude 3.5 Sonnet
+  |--NO-->|
+Use case apa?
+  |
+Simple chatbot --> GPT-4o Mini
+Customer service --> Gemini Flash
+Research/Analysis --> GPT-4o
+Coding --> Claude 3.5 Sonnet
+```
+
+### Checklist Pemilihan:
+
+```
+PILIH MODEL BERDASARKAN:
+
+[ ] Budget
+     Berapa budget per bulan?
+
+[ ] Use Case
+     Chatbot? Coding? Writing? Analysis?
+
+[ ] Volume
+     Berapa banyak chat per bulan?
+
+[ ] Quality vs Speed
+     Prioritas quality atau speed?
+
+[ ] Privacy
+     Data harus lokal atau boleh di-cloud?
+
+[ ] Technical Skill
+     Bisa self-host atau perlu managed?
+```
+
+## 10.9 OpenClaw Default Models
+
+### OpenClaw Supports:
+
+```
+MiniMax:
+- minimax/MiniMax-M2.7 (current)
+- minimax/MiniMax-M2
+- Fast, affordable
+
+OpenAI:
+- openai/gpt-4o
+- openai/gpt-4o-mini
+- openai/gpt-4-turbo
+- openai/gpt-3.5-turbo
+
+Anthropic:
+- anthropic/claude-3.5-sonnet
+- anthropic/claude-3-opus
+- anthropic/claude-3-haiku
+
+Google:
+- google/gemini-2.0-flash
+- google/gemini-1.5-pro
+- google/gemini-1.5-flash
+```
+
+### Setup di OpenClaw:
+
+```javascript
+// Dalam config:
+{
+  "ai": {
+    "model": "minimax/MiniMax-M2.7",  // Default
+    // Atau pilih model lain:
+    // "openai/gpt-4o-mini"
+    // "google/gemini-1.5-flash"
+    // "anthropic/claude-3-haiku"
+  }
+}
+```
+
+## 10.10 Tips Optimasi Biaya
+
+### 1. Use Smaller Models for Simple Tasks:
+
+```
+Simple FAQ --> Use Haiku/GPT-3.5/Gemini Flash
+Complex analysis --> Use GPT-4/Claude 3.5
+```
+
+### 2. Implement Caching:
+
+```
+Same question within 5 min
+  --> Return cached response
+  --> No API call needed
+  --> SAVE COST
+```
+
+### 3. Optimize Prompt Length:
+
+```
+BAD: "You are a helpful assistant. You are designed to be helpful."
+GOOD: "You are a helpful assistant."
+
+Shorter prompt = fewer tokens = lower cost
+```
+
+### 4. Use System Prompts Efficiently:
+
+```
+System prompt --> loaded once per conversation
+User messages --> cost setiap kali
+
+Minimize user message length when possible
+```
+
+### 5. Batch Similar Requests:
+
+```
+Instead of 100 separate API calls
+  --> Batch into fewer calls
+  --> Save on connection overhead
+```
+
+## 10.11 Ringkasan Pricing Guide
+
+### Budget Options:
+
+```
+$0-5/bulan:
+- Self-host Llama/Qwen (VPS $50+/bulan)
+- Gemini 1.5 Flash (very cheap)
+- MiniMax M2 (affordable)
+
+$5-20/bulan:
+- GPT-4o Mini
+- Claude 3 Haiku
+- Gemini 1.5 Pro
+
+$20-50/bulan:
+- Claude 3.5 Sonnet
+- GPT-4 Turbo
+- Gemini 1.5 Pro (high volume)
+
+$50+/bulan:
+- GPT-4o
+- Claude 3 Opus
+- High volume production
+```
+
+### Quick Reference:
+
+| Budget | Model Pilihan | Cocok Untuk |
+|--------|---------------|-------------|
+| FREE | Llama 3.1 (self-host) | Tech-savvy, privacy |
+| $2/bulan | Gemini Flash | Simple bots |
+| $5/bulan | GPT-4o Mini | General purpose |
+| $20/bulan | Claude 3.5 Sonnet | Coding, writing |
+| $50+/bulan | GPT-4o | Premium quality |
