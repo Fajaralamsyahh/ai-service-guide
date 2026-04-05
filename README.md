@@ -1,68 +1,79 @@
 # PANDUAN LENGKAP: AI ASSISTANT & BUSINESS BOT SERVICE
 ## Dari Nol Menjadi Service Provider
 
-**Version 2.0 | April 2026**
+**Version 3.0 | April 2026**
 
 ---
 
 ## 📑 DAFTAR ISI
 
 ### BAGIAN 1: PENDIDIKAN
-1. [Apa Itu AI Assistant?](#1-apa-itu-ai-assistant)
-2. [Apa Itu Business Bot?](#2-apa-itu-business-bot)
-3. [Perbedaan AI Assistant vs Business Bot](#3-perbedaan-ai-assistant-vs-business-bot)
-4. [Two Numbers Concept](#4-two-numbers-concept)
-5. [Platform yang Didukung](#5-platform-yang-didukung)
+1. [Apa Itu AI?](#1-apa-itu-ai-basic-understanding)
+2. [Apa Itu AI Assistant?](#2-apa-itu-ai-assistant)
+3. [Apa Itu Business Bot?](#3-apa-itu-business-bot)
+4. [Perbedaan AI Assistant vs Business Bot](#4-perbedaan-ai-assistant-vs-business-bot)
+5. [Two Numbers Concept](#5-two-numbers-concept)
+6. [Platform yang Didukung](#6-platform-yang-didukung)
 
-### BAGIAN 2: VPS & SERVER
-6. [Apa Itu VPS?](#6-apa-itu-vps)
-7. [Rekomendasi Provider VPS](#7-rekomendasi-provider-vps)
-8. [Cara Beli VPS](#8-cara-beli-vps)
-9. [SSH: Connect ke VPS](#9-ssh-connect-ke-vps)
-10. [Update & Setup Awal Server](#10-update--setup-awal-server)
+### BAGIAN 2: AI CONCEPTS & LEVELS (NEW!)
+7. [Jenis-Jenis AI Berdasarkan Kemampuan](#7-jenis-jenis-ai-berdasarkan-kemampuan)
+8. [AI Agentic: Apa Itu & Bedanya](#8-ai-agentic-apa-itu--bedanya)
+9. [Automation: Levels & Types](#9-automation-apa-itu--levels)
+10. [AI + Automation Perspective](#10-ai--automation-perspective)
+11. [Service Offering berdasarkan AI Level](#11-service-offerings-berdasarkan-ai-level)
+12. [Pricing Reference](#12-pricing-reference)
+13. [Future Proofing](#13-future-proofing-trends)
+14. [Glossary: AI Terms](#14-glossary-ai-terms)
 
-### BAGIAN 3: INSTALASI
-11. [Install Node.js](#11-install-nodejs)
-12. [Install OpenClaw](#12-install-openclaw)
-13. [Setup Auto-Start (PM2)](#13-setup-auto-start-pm2)
-14. [Setup DNS & Web Interface](#14-setup-dns--web-interface)
+### BAGIAN 3: VPS & SERVER
+15. [Apa Itu VPS?](#15-apa-itu-vps)
+16. [Rekomendasi Provider VPS](#16-rekomendasi-provider-vps)
+17. [Cara Beli VPS](#17-cara-beli-vps)
+18. [SSH: Connect ke VPS](#18-ssh-connect-ke-vps)
+19. [Update & Setup Awal Server](#19-update--setup-awal-server)
 
-### BAGIAN 4: CHANNEL SETUP
-15. [Setup WhatsApp Gateway](#15-setup-whatsapp-gateway)
-16. [Setup Telegram Bot](#16-setup-telegram-bot)
-17. [Setup Multiple Bots](#17-setup-multiple-bots)
+### BAGIAN 4: INSTALASI
+20. [Install Node.js](#20-install-nodejs)
+21. [Install OpenClaw](#21-install-openclaw)
+22. [Setup Auto-Start (PM2)](#22-setup-auto-start-pm2)
+23. [Setup DNS & Web Interface](#23-setup-dns--web-interface)
 
-### BAGIAN 5: AI MODELS
-18. [Jenis-Jenis AI Model](#18-jenis-jenis-ai-model)
-19. [Perbandingan & Pricing](#19-perbandingan--pricing)
-20. [Cara Pilih AI Model](#20-cara-pilih-ai-model)
-21. [Setup di OpenClaw](#21-setup-di-openclaw)
+### BAGIAN 5: CHANNEL SETUP
+24. [Setup WhatsApp Gateway](#24-setup-whatsapp-gateway)
+25. [Setup Telegram Bot](#25-setup-telegram-bot)
+26. [Setup Multiple Bots](#26-setup-multiple-bots)
 
-### BAGIAN 6: BUSINESS BOT
-22. [Konfigurasi Business Bot](#22-konfigurasi-business-bot)
-23. [Contoh per Industri](#23-contoh-per-industri)
-24. [Personality & Tone](#24-personality--tone)
-25. [Knowledge Base](#25-knowledge-base)
-26. [Automation Rules](#26-automation-rules)
+### BAGIAN 6: AI MODELS
+27. [Jenis-Jenis AI Model](#27-jenis-jenis-ai-model)
+28. [Perbandingan & Pricing](#28-perbandingan--pricing)
+29. [Cara Pilih AI Model](#29-cara-pilih-ai-model)
+30. [Setup di OpenClaw](#30-setup-di-openclaw)
 
-### BAGIAN 7: SKILLS
-27. [Apa Itu Skills?](#27-apa-itu-skills)
-28. [Install Skills](#28-install-skills)
-29. [Rekomendasi Skills](#29-rekomendasi-skills)
+### BAGIAN 7: BUSINESS BOT
+31. [Konfigurasi Business Bot](#31-konfigurasi-business-bot)
+32. [Contoh per Industri](#32-contoh-per-industri)
+33. [Personality & Tone](#33-personality--tone)
+34. [Knowledge Base](#34-knowledge-base)
+35. [Automation Rules](#35-automation-rules)
 
-### BAGIAN 8: SECURITY
-30. [VPS Security](#30-vps-security)
-31. [API Key Security](#31-api-key-security)
-32. [Client Data Security](#32-client-data-security)
+### BAGIAN 8: SKILLS
+36. [Apa Itu Skills?](#36-apa-itu-skills)
+37. [Install Skills](#37-install-skills)
+38. [Rekomendasi Skills](#38-rekomendasi-skills)
 
-### BAGIAN 9: BISNIS
-33. [Business Model](#33-business-model)
-34. [Pricing Packages](#34-pricing-packages)
-35. [Cara Get Clients](#35-cara-get-clients)
+### BAGIAN 9: SECURITY
+39. [VPS Security](#39-vps-security)
+40. [API Key Security](#40-api-key-security)
+41. [Client Data Security](#41-client-data-security)
 
-### BAGIAN 10: TROUBLESHOOTING
-36. [Common Issues](#36-common-issues)
-37. [Commands Reference](#37-commands-reference)
+### BAGIAN 10: BISNIS
+42. [Business Model](#42-business-model)
+43. [Pricing Packages](#43-pricing-packages)
+44. [Cara Get Clients](#44-cara-get-clients)
+
+### BAGIAN 11: TROUBLESHOOTING
+45. [Common Issues](#45-common-issues)
+46. [Commands Reference](#46-commands-reference)
 
 ---
 
@@ -70,13 +81,35 @@
 
 ---
 
-### 1. APA ITU AI ASSISTANT?
+### 1. APA ITU AI? (Basic Understanding)
+
+```
+AI = Artificial Intelligence (Kecerdasan Buatan)
+
+AI adalah computer/sistem yang bisa:
+- Understand bahasa manusia
+- Generate text/responses
+- Make decisions
+- Learn dari data
+- Solve problems
+
+Tapi AI itu ada LEVELS:
+├── Chatbot Sederhana (rule-based)
+├── AI Assistant (conversational)
+├── AI Agentic (autonomous actions)
+├── AGI (human-level intelligence)
+└── ASI (beyond human)
+```
+
+---
+
+### 2. APA ITU AI ASSISTANT?
 
 AI Assistant adalah AI yang membantumu dalam kegiatan sehari-hari melalui chat.
 
 ```
 Contoh:
-- Kamu chat: "Buatin email balasan ke client"
+- Kamu chat: "Buatkan email balasan ke client"
 - AI jawab: Email lengkap
 - Kamu copy paste
 ```
@@ -85,7 +118,7 @@ Contoh:
 
 ---
 
-### 2. APA ITU BUSINESS BOT?
+### 3. APA ITU BUSINESS BOT?
 
 Business Bot adalah AI yang menangani customer service atau sales secara otomatis.
 
@@ -101,7 +134,7 @@ Contoh:
 
 ---
 
-### 3. PERBEDAAN AI ASSISTANT VS BUSINESS BOT
+### 4. PERBEDAAN AI ASSISTANT VS BUSINESS BOT
 
 | Aspek | AI Assistant | Business Bot |
 |-------|-------------|--------------|
@@ -113,7 +146,7 @@ Contoh:
 
 ---
 
-### 4. TWO NUMBERS CONCEPT
+### 5. TWO NUMBERS CONCEPT
 
 ```
 NOMOR UTAMA (0888...):
@@ -131,7 +164,7 @@ NOMOR KEDUA (0899...):
 
 ---
 
-### 5. PLATFORM YANG DIDUKUNG
+### 6. PLATFORM YANG DIDUKUNG
 
 | Platform | Status | Setup | Biaya |
 |----------|--------|-------|-------|
@@ -146,11 +179,363 @@ NOMOR KEDUA (0899...):
 
 ---
 
-## BAGIAN 2: VPS & SERVER
+## BAGIAN 2: AI CONCEPTS & LEVELS
 
 ---
 
-### 6. APA ITU VPS?
+### 7. JENIS-JENIS AI BERDASARKAN KEMAMPUAN
+
+#### Level 1: Chatbot Sederhana
+
+```
+Kemampuan:
+- Respon berdasarkan rules/text yang udah predefined
+- Keyword detection
+- Fixed responses
+
+Contoh:
+- Auto-reply sederhana
+- FAQ bot
+- Scripted responses
+
+Keterbatasan:
+- Gak bisa understand konteks
+- Gak bisa learn
+- Harus diinput manual setiap response
+```
+
+#### Level 2: AI Assistant (yang kita pakai sekarang)
+
+```
+Kemampuan:
+- Conversational (ngobrol natural)
+- Understand context
+- Generate responses based on training
+- Learn patterns dari data besar
+
+Contoh:
+- ChatGPT, Claude, Gemini
+- AI Assistant via WhatsApp/Telegram
+
+Keterbatasan:
+- Kamu chat → AI respond
+- AI gak bisa take actions sendiri
+- Butuh prompt dari manusia
+```
+
+#### Level 3: AI AGENTIC (Next Level!)
+
+```
+Kemampuan:
+- Autonomous (bisa bertindak sendiri)
+- Plan dan execute tasks
+- Use tools (browse web, send emails, dll)
+- Make decisions based on goals
+- Multi-step reasoning
+
+Bedanya sama AI Assistant:
+AI Assistant: "ChatGPT, buatin email"
+AI Agentic: "ChatGPT, buatin email DAN KIRIM ke client"
+
+Contoh AI Agentic:
+- Auto-reply email + send
+- Monitor harga + auto buy
+- Research + generate report + send
+- Schedule meeting + send invites
+```
+
+#### Level 4: AGI (Artificial General Intelligence)
+
+```
+Kemampuan:
+- Se-intelligent manusia
+- Bisa do ANY intellectual task
+- Self-aware
+- Continual learning
+- Transfer learning (apply knowledge from one domain to another)
+
+Status:
+- BELUM EXISTS
+- Masih theoretical/future
+- Mungkin 5-20 tahun lagi
+- Banyak company yang bilang "almost AGI" tapi belum
+
+Warning:
+- Jangan percaya klaim "AGI" yang udah ada sekarang
+- Yang ada sekarang semua masih AI, bukan AGI
+```
+
+#### Level 5: ASI (Artificial Superintelligence)
+
+```
+Kemampuan:
+- Beyond human intelligence
+- Self-improving
+- Could solve problems manusia gak bisa
+
+Status:
+- Purely theoretical
+- Science fiction territory
+- No timeline
+```
+
+---
+
+### 8. AI AGENTIC: APA ITU & BEDANYA
+
+#### Definisi AI Agentic
+
+```
+AI AGENTIC = AI yang bisa TAKE ACTIONS sendiri
+
+"Agentic" = ability to act autonomously
+
+AI Biasa:
+User: "Bantu belikan iPhone 15"
+AI: "Berikut info iPhone 15..."
+
+AI Agentic:
+User: "Bantu belikan iPhone 15"
+AI: "Oke, saya check harga..."
+AI: "Nemukan harga terbaik di Tokopedia"
+AI: "Membeli sekarang..."
+AI: "Selesai! Order #12345 confirmed"
+```
+
+#### Components AI Agentic
+
+```
+AI AGENTIC SYSTEM:
+
+1. LLM (Brain)
+   ├── Understand user goals
+   ├── Generate responses
+   └── Make decisions
+
+2. Planning Module
+   ├── Break down tasks
+   ├── Create steps
+   └── Prioritize actions
+
+3. Tools/Function Calling
+   ├── Web browsing
+   ├── Send emails
+   ├── Make purchases
+   └── API integrations
+
+4. Memory
+   ├── Remember past interactions
+   ├── Store context
+   └── Learn from feedback
+
+5. Execution
+   ├── Take real-world actions
+   ├── Interact with external systems
+   └── Complete tasks
+```
+
+#### AI Agentic vs AI biasa di OpenClaw
+
+```
+OPENCLAW SAAT INI:
+├── AI Assistant level (conversational)
+├── Responds to messages
+├── Generate text/responses
+├── Use skills (like tools)
+
+OPENCLAW FUTURE (Agentic):
+├── Autonomous task completion
+├── Multi-step planning
+├── Real-world actions
+├── Self-initiated workflows
+```
+
+---
+
+### 9. AUTOMATION: APA ITU & LEVELS
+
+#### Definisi Automation
+
+```
+AUTOMATION = tugas yang execute TANPA manusia intervention
+
+Manual:
+User → Click → Send email → Done
+
+Automated:
+System → Trigger → Action → Done
+
+Contoh:
+- Email auto-reply (otomatis respond)
+- Scheduled posts (posting tanpa human)
+- Auto-save files (save tanpa click)
+- Trading bots (buy/sell otomatis)
+```
+
+#### Levels of Automation
+
+```
+LEVEL 1: RULE-BASED (Basic)
+├── IFTTT-style automation
+├── If this → Then that
+├── No AI involved
+├── Example:
+   If price drops below $100 → Send alert
+
+LEVEL 2: AI-ENHANCED (Current)
+├── AI assists automation
+├── Smart decisions based on context
+├── Example:
+   If customer asks "harga?" → AI generates response
+
+LEVEL 3: AI AGENTIC (Advanced)
+├── AI plans AND executes
+├── Autonomous decision making
+├── Example:
+   If price drops + volume spikes → AI buys + monitors + sells
+
+LEVEL 4: FULL AUTONOMY (Future)
+├── Human sets goals only
+├── AI handles everything else
+├── Minimal human oversight
+├── Example:
+   "Maximize my portfolio" → AI does everything
+```
+
+---
+
+### 10. AI + AUTOMATION: SERVICE OFFERINGS
+
+#### Tier 1: AI Assistant (Basic)
+
+```
+Description:
+- Conversational interface
+- Personal or business use
+- Responds to queries
+- Information retrieval
+
+Use Cases:
+- Personal productivity
+- Basic customer service
+- Information answering
+- Drafting assistance
+
+Setup Complexity: Easy
+Cost: Low
+AI Level: Assistant
+```
+
+#### Tier 2: AI Automation (Intermediate)
+
+```
+Description:
+- Rule-based workflows
+- Automated responses
+- Scheduled tasks
+- Multi-step sequences
+
+Use Cases:
+- Email automation
+- Social media scheduling
+- Auto-responders
+- Data processing
+
+Setup Complexity: Medium
+Cost: Medium
+AI Level: AI + Rules
+```
+
+#### Tier 3: AI Agentic (Advanced)
+
+```
+Description:
+- Autonomous task completion
+- Multi-step planning
+- Tool use
+- Self-initiated actions
+
+Use Cases:
+- Autonomous trading
+- Research agents
+- Personal secretary
+- Complex automation
+
+Setup Complexity: High
+Cost: High
+AI Level: Agentic (emerging)
+```
+
+---
+
+### 11. PRICING REFERENCE BERDASARKAN COMPLEXITY
+
+| Tier | Description | Setup | Monthly | Time to Build |
+|-------|-------------|-------|---------|---------------|
+| **Basic** | AI Assistant personal | Rp 200-400rb | Rp 100rb | 1-2 hours |
+| **Standard** | Business automation | Rp 500rb-1jt | Rp 150-250rb | 2-5 hours |
+| **Premium** | AI Agentic | Rp 1.5-3jt | Rp 300-500rb | 5-20 hours |
+| **Enterprise** | Custom solution | Rp 5jt+ | Negotiable | Weeks |
+
+**Note:** Monthly = maintenance/support, VPS + AI API costs excluded.
+
+---
+
+### 12. FUTURE PROOFING: TRENDS TO WATCH
+
+```
+EMERGING TRENDS (2026):
+
+1. AI Agentic Features
+   - More tools integration
+   - Better autonomous actions
+   - Multi-modal capabilities
+
+2. Better Reasoning
+   - Improved logical thinking
+   - Better problem-solving
+   - More accurate responses
+
+3. Lower Costs
+   - AI models getting cheaper
+   - More competition
+   - Better efficiency
+
+4. Easier Setup
+   - No-code platforms
+   - Pre-built templates
+   - Faster deployment
+
+5. Regulation
+   - More AI governance
+   - Privacy concerns
+   - Compliance needs
+```
+
+---
+
+### 13. GLOSSARY: AI TERMS
+
+```
+AI = Artificial Intelligence (Kecerdasan Buatan)
+LLM = Large Language Model (GPT, Claude, Gemini)
+AGI = Artificial General Intelligence (AI se-human)
+ASI = Artificial Superintelligence (AI beyond human)
+Agentic = AI yang bisa take actions sendiri
+Automation = Tugas yang execute otomatis
+Prompt = Instruksi ke AI
+Token = Unit text yang diproses AI (1 word ~ 1.3 tokens)
+API = Application Programming Interface
+Chatbot = Program yang chat secara otomatis
+```
+
+---
+
+## BAGIAN 3: VPS & SERVER
+
+---
+
+### 15. APA ITU VPS?
 
 VPS = Virtual Private Server
 
@@ -167,7 +552,7 @@ VPS = Server di cloud yang kamu SEWA
 
 ---
 
-### 7. REKOMENDASI PROVIDER VPS
+### 16. REKOMENDASI PROVIDER VPS
 
 | Provider | Harga/Bulan | Spec | Lokasi |
 |----------|--------------|------|--------|
@@ -187,7 +572,7 @@ OS: Ubuntu 22.04 LTS
 
 ---
 
-### 8. CARA BELI VPS (DigitalOcean)
+### 17. CARA BELI VPS (DigitalOcean)
 
 ```
 1. Buka https://digitalocean.com
@@ -204,16 +589,9 @@ OS: Ubuntu 22.04 LTS
 8. Simpan IP + credentials
 ```
 
-**Credentials yang didapat:**
-```
-IP Address: 143.198.xx.xx
-Username: root
-Password: xxxxxxxx (dikirim via email)
-```
-
 ---
 
-### 9. SSH: CONNECT KE VPS
+### 18. SSH: CONNECT KE VPS
 
 #### Dari Windows (CMD):
 
@@ -234,16 +612,9 @@ ssh root@143.198.xx.xx
 4. Save > Connect
 ```
 
-#### Dari Mac/Linux:
-
-```bash
-ssh root@143.198.xx.xx
-# Enter password saat diminta
-```
-
 ---
 
-### 10. UPDATE & SETUP AWAL SERVER
+### 19. UPDATE & SETUP AWAL SERVER
 
 Setelah connect, jalankan:
 
@@ -260,11 +631,11 @@ apt install -y curl wget git unzip
 
 ---
 
-## BAGIAN 3: INSTALASI
+## BAGIAN 4: INSTALASI
 
 ---
 
-### 11. INSTALL NODE.JS
+### 20. INSTALL NODE.JS
 
 ```bash
 # Install Node.js 18.x
@@ -278,7 +649,7 @@ npm --version
 
 ---
 
-### 12. INSTALL OPENCLAW
+### 21. INSTALL OPENCLAW
 
 ```bash
 # Install OpenClaw globally
@@ -299,7 +670,7 @@ openclaw start
 
 ---
 
-### 13. SETUP AUTO-START (PM2)
+### 22. SETUP AUTO-START (PM2)
 
 ```bash
 # Install PM2
@@ -313,33 +684,17 @@ pm2 startup
 pm2 save
 ```
 
-**Commands PM2 berguna:**
-
-```bash
-pm2 list                    # Lihat semua process
-pm2 logs openclaw --lines 50  # Lihat logs
-pm2 restart openclaw       # Restart
-pm2 stop openclaw          # Stop
-pm2 delete openclaw        # Delete
-```
-
 ---
 
-### 14. SETUP DNS & WEB INTERFACE
-
-#### Install Nginx:
+### 23. SETUP DNS & WEB INTERFACE
 
 ```bash
+# Install Nginx
 apt install -y nginx
+
+# Configure
+nano /etc/nginx/sites-available/default
 ```
-
-#### Configure:
-
-```bash
-sudo nano /etc/nginx/sites-available/default
-```
-
-Paste ini:
 
 ```nginx
 server {
@@ -362,15 +717,13 @@ server {
 sudo systemctl restart nginx
 ```
 
-Sekarang bisa akses: `http://IP_VPS`
+---
+
+## BAGIAN 5: CHANNEL SETUP
 
 ---
 
-## BAGIAN 4: CHANNEL SETUP
-
----
-
-### 15. SETUP WHATSAPP GATEWAY
+### 24. SETUP WHATSAPP GATEWAY
 
 ```
 1. Buka dashboard OpenClaw: http://IP_VPS:18789
@@ -380,14 +733,9 @@ Sekarang bisa akses: `http://IP_VPS`
 5. WhatsApp connected!
 ```
 
-**Catatan:**
-- Gunakan nomor khusus untuk AI (bukan nomor utama)
-- WhatsApp hanya bisa di-pair ke 1 device dalam satu waktu
-- Jika nomor utama mau digunakan untuk AI, WhatsApp biasa tidak bisa dipakai
-
 ---
 
-### 16. SETUP TELEGRAM BOT
+### 25. SETUP TELEGRAM BOT
 
 #### Step 1: Buat Bot di Telegram
 
@@ -397,9 +745,8 @@ Sekarang bisa akses: `http://IP_VPS`
 3. Klik "Start"
 4. Ketik: /newbot
 5. Beri Nama Bot: (contoh: "AI Assistant Fajar")
-6. Beri Username: (contoh: fajar_ai_bot) - harus diakhiri "_bot"
+6. Beri Username: (contoh: fajar_ai_bot)
 7. BotFather kasih TOKEN: 123456789:ABCdefGHIjklMNOpqrsTUVwxyz123456
-8. SIMPAN TOKEN INI!
 ```
 
 #### Step 2: Configure di OpenClaw
@@ -411,30 +758,9 @@ Sekarang bisa akses: `http://IP_VPS`
 4. Klik "Enable"
 ```
 
-#### Step 3: Get Chat ID
-
-```
-1. Buka Telegram
-2. Chat ke bot yang baru dibuat (@username_bot)
-3. Ketik: /start
-4. Kirim pesan apapun
-5. Buka: https://api.telegram.org/botYOUR_TOKEN/getUpdates
-6. Cari "chat": {"id": 123456789 }
-7. Itu Chat ID kamu
-```
-
 ---
 
-### 17. SETUP MULTIPLE BOTS
-
-#### Multiple Telegram Bots (Multiple Clients):
-
-```bash
-# Buka config
-openclaw config
-```
-
-Edit config:
+### 26. SETUP MULTIPLE BOTS
 
 ```javascript
 {
@@ -456,17 +782,13 @@ Edit config:
 }
 ```
 
-**Tiap client = bot Telegram berbeda = token berbeda.**
+---
+
+## BAGIAN 6: AI MODELS
 
 ---
 
-## BAGIAN 5: AI MODELS
-
----
-
-### 18. JENIS-JENIS AI MODEL
-
-#### Berdasarkan Fungsi:
+### 27. JENIS-JENIS AI MODEL
 
 | Tipe | Fungsi | Contoh |
 |------|--------|---------|
@@ -474,8 +796,6 @@ Edit config:
 | **Vision** | Image analysis | GPT-4V, Claude Vision |
 | **Audio** | Speech to text, TTS | Whisper, ElevenLabs |
 | **Multimodal** | Text + Image + Audio | GPT-4o, Gemini Pro |
-
-#### Berdasarkan Provider:
 
 | Provider | Models | Harga |
 |----------|--------|-------|
@@ -489,218 +809,67 @@ Edit config:
 
 ---
 
-### 19. PERBANDINGAN & PRICING
-
-#### Perbandingan Quick Reference:
-
-| Model | Provider | Speed | Quality | Harga/1M Tokens | Cocok Untuk |
-|-------|----------|-------|---------|------------------|-------------|
-| GPT-4o | OpenAI | ⚡⚡⚡ | ⭐⭐⭐⭐⭐ | $2.50 input | Premium tasks |
-| GPT-4o Mini | OpenAI | ⚡⚡⚡⚡ | ⭐⭐⭐⭐ | $0.15 input | General purpose |
-| Claude 3.5 Sonnet | Anthropic | ⚡⚡ | ⭐⭐⭐⭐⭐ | $3.00 input | Coding, writing |
-| Claude 3 Haiku | Anthropic | ⚡⚡⚡⚡ | ⭐⭐⭐ | $0.25 input | Fast, cheap |
-| Gemini 2.0 Flash | Google | ⚡⚡⚡⚡ | ⭐⭐⭐⭐ | $0.10 input | Fast, cheap |
-| Gemini 1.5 Flash | Google | ⚡⚡⚡⚡ | ⭐⭐⭐ | $0.075 input | Very cheap |
-| MiniMax M2.7 | MiniMax | ⚡⚡⚡⚡ | ⭐⭐⭐ | $0.20 input | Budget-friendly |
-
-#### Perbandingan Detail (per 1M tokens):
+### 28. PERBANDINGAN & PRICING
 
 | Model | Input | Output | Context Window |
 |-------|-------|--------|----------------|
-| GPT-4o | $2.50 | $10.00 | 128K |
-| GPT-4o Mini | $0.15 | $0.60 | 128K |
-| Claude 3.5 Sonnet | $3.00 | $15.00 | 200K |
-| Claude 3 Haiku | $0.25 | $1.25 | 200K |
-| Gemini 2.0 Flash | $0.10 | $0.40 | 1M |
-| Gemini 1.5 Flash | $0.075 | $0.30 | 128K |
-| MiniMax M2.7 | $0.20 | $0.70 | 32K |
-
-#### Contoh Kalkulasi Biaya:
-
-**Business Bot (500 chats/hari, 30 hari):**
-
-```
-Per chat: ~200 tokens input + 150 tokens output = 350 tokens
-Per hari: 500 x 350 = 175,000 tokens
-Per bulan: 175,000 x 30 = 5,250,000 tokens (5.25M)
-
-Dengan Gemini Flash:
-- Input: 5.25M x $0.075/1M = $0.39
-- Output: 5.25M x $0.30/1M = $1.58
-- Total: ~$2/bulan
-
-Dengan GPT-4o Mini:
-- Input: 5.25M x $0.15/1M = $0.79
-- Output: 5.25M x $0.60/1M = $3.15
-- Total: ~$4/bulan
-```
+| GPT-4o | $2.50/1M | $10.00/1M | 128K |
+| GPT-4o Mini | $0.15/1M | $0.60/1M | 128K |
+| Claude 3.5 Sonnet | $3.00/1M | $15.00/1M | 200K |
+| Claude 3 Haiku | $0.25/1M | $1.25/1M | 200K |
+| Gemini 2.0 Flash | $0.10/1M | $0.40/1M | 1M |
+| Gemini 1.5 Flash | $0.075/1M | $0.30/1M | 128K |
+| MiniMax M2.7 | $0.20/1M | $0.70/1M | 32K |
 
 ---
 
-### 20. CARA PILIH AI MODEL
+### 29. CARA PILIH AI MODEL
 
-#### Berdasarkan Budget:
-
-| Budget/Bulan | Model Pilihan | Notes |
-|--------------|---------------|-------|
-| **Free** | Llama 3.1 (self-host) | Butuh VPS RAM 64GB+ |
-| **$1-5** | Gemini Flash, MiniMax M2 | Sangat affordable |
-| **$5-15** | GPT-4o Mini, Claude Haiku | Balanced |
-| **$15-50** | GPT-4o, Claude 3.5 Sonnet | Premium |
-
-#### Berdasarkan Use Case:
-
-| Use Case | Rekomendasi | Budget |
-|----------|-------------|--------|
-| **Personal Assistant** | GPT-4o Mini | $5-10/bulan |
-| **Business CS Bot** | Gemini Flash, GPT-4o Mini | $2-5/bulan |
-| **Coding Assistant** | Claude 3.5 Sonnet | $20-50/bulan |
-| **Research/Analysis** | GPT-4o | $30-100/bulan |
-| **Simple FAQ Bot** | Gemini Flash | $1-3/bulan |
+| Budget | Model Pilihan | Cocok Untuk |
+|--------|---------------|-------------|
+| **Free** | Llama 3.1 (self-host) | Tech-savvy, privacy |
+| **$1-5/bulan** | Gemini Flash, MiniMax M2 | Simple bots |
+| **$5-15/bulan** | GPT-4o Mini, Claude Haiku | General purpose |
+| **$15-50/bulan** | GPT-4o, Claude 3.5 Sonnet | Premium tasks |
 
 ---
 
-### 21. SETUP DI OPENCLAW
-
-#### Config di OpenClaw:
+### 30. SETUP DI OPENCLAW
 
 ```javascript
-// Dalam dashboard atau config file:
 {
   "ai": {
     "model": "minimax/MiniMax-M2.7"  // Default
-    // Atau pilih model lain:
-    // "openai/gpt-4o-mini"
-    // "google/gemini-1.5-flash"
-    // "anthropic/claude-3-haiku"
   }
 }
 ```
 
-#### Model Aliases di OpenClaw:
+---
 
-```
-OpenAI:
-- openai/gpt-4o
-- openai/gpt-4o-mini
-- openai/gpt-4-turbo
-- openai/gpt-3.5-turbo
-
-Anthropic:
-- anthropic/claude-3.5-sonnet
-- anthropic/claude-3-opus
-- anthropic/claude-3-haiku
-
-Google:
-- google/gemini-2.0-flash
-- google/gemini-1.5-pro
-- google/gemini-1.5-flash
-
-MiniMax:
-- minimax/MiniMax-M2.7
-- minimax/MiniMax-M2
-```
+## BAGIAN 7: BUSINESS BOT
 
 ---
 
-## BAGIAN 6: BUSINESS BOT
-
----
-
-### 22. KONFIGURASI BUSINESS BOT
-
-Business Bot butuh konfigurasi lebih dari AI Assistant:
+### 31. KONFIGURASI BUSINESS BOT
 
 ```javascript
 {
   "business": {
     "name": "Nama Toko Bot",
-    "industry": "E-commerce / Restaurant / Healthcare / dll",
-    
+    "industry": "E-commerce",
     "personality": {
       "role": "Customer Service",
       "tone": "Friendly, professional",
-      "language": "Bahasa Indonesia",
-      "description": "Kamu adalah customer service yang helpful"
+      "language": "Bahasa Indonesia"
     },
-    
     "knowledge": {
       "products": ["List produk"],
       "prices": {"Produk": "Harga"},
-      "faq": ["Pertanyaan umum"],
-      "policies": ["Pengiriman", "Garansi", "Retur"]
+      "faq": ["Pertanyaan umum"]
     },
-    
     "rules": [
       "Selalu sopan",
-      "Escalate ke manusia untuk komplain besar",
-      "Jangan invent harga sendiri",
-      "Redirect ke website untuk detail"
-    ],
-    
-    "autoResponses": {
-      "greeting": "Halo! Terima kasih menghubungi [Nama]. Ada yang bisa saya bantu?",
-      "afterHours": "Maaf, kami sedang tutup. Jam operasional: 9 pagi - 9 malam.",
-      "unknown": "Maaf, saya tidak memahami pertanyaan tersebut. Bisa diulang atau hubungi human agent?"
-    }
-  }
-}
-```
-
----
-
-### 23. CONTOH PER INDUSTRI
-
-#### Restaurant:
-
-```javascript
-{
-  "business": {
-    "name": "Warung Nusantara Bot",
-    "industry": "Restaurant",
-    
-    "knowledge": {
-      "menu": [
-        {"name": "Nasi Goreng", "price": "Rp 25.000", "desc": "Nasi digoreng dengan bumbu special"},
-        {"name": "Mie Goreng", "price": "Rp 23.000", "desc": "Mie digoreng kering"},
-        {"name": "Ayam Geprek", "price": "Rp 28.000", "desc": "Ayam crispy dengan sambal"}
-      ],
-      "hours": "10 pagi - 10 malam",
-      "location": "Jl. Merdeka No. 123, Jakarta",
-      "delivery": "Grab/Gojek only"
-    },
-    
-    "rules": [
-      "Rekomendasikan dish populer",
-      "Tanya delivery atau dine-in",
-      "Konfirmasi order sebelum closing",
-      "Always say thank you!"
-    ]
-  }
-}
-```
-
-#### E-commerce:
-
-```javascript
-{
-  "business": {
-    "name": "GadgetStore Bot",
-    "industry": "E-commerce Electronics",
-    
-    "knowledge": {
-      "categories": ["HP", "Laptop", "Aksesoris"],
-      "brands": ["Apple", "Samsung", "Xiaomi", "Asus", "Lenovo"],
-      "warranty": "1 tahun resmi distributor",
-      "paymentMethods": ["Transfer BCA", "COD", "Midtrans"],
-      "shipping": ["JNE", "J&T", "SiCepat"]
-    },
-    
-    "rules": [
-      "Help customers find products",
-      "Compare specs when asked",
-      "Inform about warranty clearly",
-      "Redirect to human for complaints"
+      "Escalate ke manusia untuk komplain besar"
     ]
   }
 }
@@ -708,132 +877,103 @@ Business Bot butuh konfigurasi lebih dari AI Assistant:
 
 ---
 
-### 24. PERSONALITY & TONE
+### 32. CONTOH PER INDUSTRI
 
-#### Tentukan Personality:
-
+**Restaurant:**
+```javascript
+{
+  "menu": [
+    {"name": "Nasi Goreng", "price": "Rp 25.000"},
+    {"name": "Mie Goreng", "price": "Rp 23.000"}
+  ],
+  "hours": "10 pagi - 10 malam",
+  "location": "Jl. Merdeka No. 123, Jakarta"
+}
 ```
-ROLES:
-- Customer Service
-- Sales Representative
-- Technical Support
-- Order Taker
-- Appointment Scheduler
-- Consultant
-- Personal Assistant
+
+**E-commerce:**
+```javascript
+{
+  "categories": ["HP", "Laptop", "Aksesoris"],
+  "brands": ["Apple", "Samsung", "Xiaomi"],
+  "warranty": "1 tahun resmi",
+  "paymentMethods": ["Transfer", "COD", "Midtrans"]
+}
 ```
 
-#### Tone Examples:
+---
+
+### 33. PERSONALITY & TONE
 
 | Role | Tone | Contoh |
 |------|------|--------|
 | **Casual Shop** | Friendly, casual | "Halo! Mau cari apa nih?" |
 | **Premium Brand** | Professional, formal | "Selamat datang. Ada yang bisa saya bantu?" |
-| **Tech Support** | Technical, patient | "Saya pahami issue-nya. Mari kita check step by step." |
-| **Restaurant** | Warm, welcoming | "Hai! Mau makan apa hari ini?" |
+| **Tech Support** | Technical, patient | "Saya pahami issue-nya. Mari kita check." |
 
 ---
 
-### 25. KNOWLEDGE BASE
+### 34. KNOWLEDGE BASE
 
 ```
 KNOWLEDGE BASE TERDIRI DARI:
 
 1. PRODUCTS/SERVICES
-   - List lengkap produk/jasa
-   - Deskripsi singkat
-   - Variants
-
 2. PRICING
-   - Harga each product
-   - Promo/diskon
-   - Bundle packages
-
-3. FAQ (Frequently Asked Questions)
-   - Jam operasional
-   - Cara order
-   - Info pengiriman
-   - Kebijakan retur
-
+3. FAQ
 4. POLICIES
-   - Garansi
-   - Pengiriman
-   - Pembayaran
-   - Complaint handling
 ```
 
 ---
 
-### 26. AUTOMATION RULES
+### 35. AUTOMATION RULES
 
 ```
 RULES UNTUK BUSINESS BOT:
 
-1. Greeting
-   - Auto-reply untuk salam pembuka
-   - Sesuaikan jam operasional
-
-2. FAQ Handling
-   - Jawaban instant untuk pertanyaan umum
-   - Link ke resources
-
-3. Order Processing
-   - Collect necessary info
-   - Confirm order
-   - Send to human for final approval
-
-4. Escalation
-   - Complex issues → human agent
-   - Complaints → human agent
-   - Urgent matters → human agent
-
-5. Closing
-   - Thank you message
-   - Follow-up reminder (optional)
+1. Greeting - Auto-reply untuk salam
+2. FAQ Handling - Instant untuk pertanyaan umum
+3. Order Processing - Collect info, confirm order
+4. Escalation - Complex issues → human agent
+5. Closing - Thank you message
 ```
 
 ---
 
-## BAGIAN 7: SKILLS
+## BAGIAN 8: SKILLS
 
 ---
 
-### 27. APA ITU SKILLS?
+### 36. APA ITU SKILLS?
 
-Skills adalah kemampuan tambahan untuk AI:
+Skills adalah kemampuan tambahan untuk AI.
 
 ```
-CONTOH SKILLS:
-
-marketing      → Content creation, social media
-github         → Manage repos, issues
-weather         → Cek cuaca
-healthcheck    → Server security audit
-notion         → Notes integration
-crypto-news    → Crypto news aggregation
+CONTOH:
+- marketing - Content creation
+- github - Manage repos
+- weather - Cek cuaca
+- healthcheck - Server security
 ```
 
 ---
 
-### 28. INSTALL SKILLS
+### 37. INSTALL SKILLS
 
 ```bash
-# Lihat installed skills
+# Lihat skills
 openclaw skills list
-
-# Search skills
-openclaw skills search "marketing"
 
 # Install skill
 openclaw skills install marketing
 
-# Update all skills
+# Update
 openclaw skills update
 ```
 
 ---
 
-### 29. REKOMENDASI SKILLS
+### 38. REKOMENDASI SKILLS
 
 | Skill | Fungsi | Worth |
 |-------|--------|-------|
@@ -841,184 +981,137 @@ openclaw skills update
 | **github** | Manage repos | ⭐⭐ |
 | **weather** | Cek cuaca | ⭐ |
 | **healthcheck** | Server security | ⭐⭐⭐ |
-| **notion** | Notes integration | ⭐⭐ |
 
 ---
 
-## BAGIAN 8: SECURITY
+## BAGIAN 9: SECURITY
 
 ---
 
-### 30. VPS SECURITY
+### 39. VPS SECURITY
 
 ```bash
-# 1. Update regularly
+# Update regularly
 apt update && apt upgrade -y
 
-# 2. Install fail2ban (prevents brute force)
+# Install fail2ban
 apt install -y fail2ban
 
-# 3. Setup firewall
-ufw allow 22    # SSH
-ufw allow 80    # HTTP
-ufw allow 443   # HTTPS
+# Setup firewall
+ufw allow 22
+ufw allow 80
+ufw allow 443
 ufw enable
-
-# 4. Disable root login (advanced)
-nano /etc/ssh/sshd_config
-# Edit: PermitRootLogin no
-systemctl restart sshd
 ```
 
 ---
 
-### 31. API KEY SECURITY
+### 40. API KEY SECURITY
 
 ```
 DO:
 ✅ Use API keys with limited permissions
 ✅ Store in environment variables
 ✅ Rotate keys periodically
-✅ Use read-only when possible
 
 DON'T:
 ❌ Share keys in plain text
-❌ Use same key for everything
 ❌ Commit keys to git
-❌ Give full access when not needed
 ```
 
 ---
 
-### 32. CLIENT DATA SECURITY
+### 41. CLIENT DATA SECURITY
 
 ```
 PRINCIPLE: Minimal Access
 
-EMAIL AUTOMATION:
+EMAIL:
 - Use app password (not main password)
-- Enable 2FA on email account
-- Give only send/read permissions
+- Enable 2FA
 
 SOCIAL MEDIA:
 - Use platform API tokens
 - Read-only when possible
-- No full account access
 ```
 
 ---
 
-## BAGIAN 9: BISNIS
+## BAGIAN 10: BISNIS
 
 ---
 
-### 33. BUSINESS MODEL
+### 42. BUSINESS MODEL
 
 ```
 LAYANAN YANG BISA DITAWARKAN:
 
 1. PERSONAL AI ASSISTANT
-   - Setup untuk individu
-   - Private, personal use
-   - Based on needs
-
-2. BUSINESS BOT
-   - CS automation
-   - Sales automation
-   - 24/7 customer service
-
+2. BUSINESS BOT (CS Automation)
 3. TELEGRAM/WHATSAPP BOT
-   - Custom bot untuk business
-   - Auto-reply
-   - Information retrieval
-
 4. AUTOMATION SERVICES
-   - Email automation
-   - Social media automation
-   - Calendar integration
 ```
 
 ---
 
-### 34. PRICING PACKAGES
+### 43. PRICING PACKAGES
 
-| Paket | Harga Setup | Monthly | Include |
-|-------|-------------|---------|---------|
-| **Basic** | Rp 200rb | Rp 100rb | Telegram/WhatsApp bot, basic AI |
-| **Standard** | Rp 400rb | Rp 150rb | + Email integration, FAQ setup |
-| **Premium** | Rp 750rb | Rp 250rb | + Multi-platform, advanced automation |
-
-**Note:** Biaya VPS dan AI model ditanggung client terpisah.
+| Paket | Setup | Monthly | Include |
+|-------|-------|---------|---------|
+| **Basic** | Rp 200rb | Rp 100rb | Telegram/WhatsApp, basic AI |
+| **Standard** | Rp 400rb | Rp 150rb | + Email integration, FAQ |
+| **Premium** | Rp 750rb | Rp 250rb | + Multi-platform, advanced |
 
 ---
 
-### 35. CARA GET CLIENTS
+### 44. CARA GET CLIENTS
 
 ```
 STRATEGY:
 
-1. PORTFOLIO
-   - Buat sample bots
-   - Document process
-   - Show before/after
-
-2. CHANNEL
-   - Twitter/X
-   - Discord communities
-   - Crypto/Tech groups
-   - Local business groups
-
-3. OFFER
-   - Free trial (1 minggu)
-   - Discount for first 5 clients
-   - Testimonial-driven
-
-4. PRICING
-   - Start low untuk dapat testimonial
-   - Naik harga seiring portfolio grow
+1. PORTFOLIO - Buat sample bots
+2. CHANNEL - Twitter, Discord, groups
+3. OFFER - Free trial untuk first clients
+4. PRICING - Start low, naik seiring portfolio
 ```
 
 ---
 
-## BAGIAN 10: TROUBLESHOOTING
+## BAGIAN 11: TROUBLESHOOTING
 
 ---
 
-### 36. COMMON ISSUES
+### 45. COMMON ISSUES
 
 | Problem | Solution |
 |---------|----------|
 | VPS can't connect | Check IP, password, firewall |
 | Bot offline | Check PM2 logs, restart |
-| WhatsApp disconnected | Re-scan QR code |
-| Telegram bot not responding | Check token, authorized chats |
-| AI responses slow | Check model, consider faster model |
+| WhatsApp disconnected | Re-scan QR |
+| Telegram not responding | Check token, chats |
 
 ---
 
-### 37. COMMANDS REFERENCE
+### 46. COMMANDS REFERENCE
 
 ```bash
 # VPS
-ssh root@IP_VPS              # Connect
-exit                        # Disconnect
+ssh root@IP_VPS
+exit
 
 # OpenClaw
-openclaw start              # Start
-openclaw stop               # Stop
-openclaw restart            # Restart
-openclaw status            # Check status
-openclaw logs             # View logs
+openclaw start/stop/restart
+openclaw status
+openclaw logs
 
 # PM2
-pm2 list                  # List processes
-pm2 logs name --lines 50  # View logs
-pm2 restart name          # Restart
-pm2 stop name            # Stop
+pm2 list
+pm2 logs name --lines 50
+pm2 restart name
 
 # System
-apt update && apt upgrade -y   # Update system
-htop                         # Monitor resources
+apt update && apt upgrade -y
+htop
 ```
 
 ---
@@ -1027,13 +1120,10 @@ htop                         # Monitor resources
 
 ```
 Questions?
-Contact: via GitHub Issues atau DM
-
-Found errors atau want to contribute?
-Submit PR ke repository
+Via GitHub Issues atau DM
 ```
 
 ---
 
 **© 2026 AI Service Guide**
-**Version 2.0**
+**Version 3.0**
